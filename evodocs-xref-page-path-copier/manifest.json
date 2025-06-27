@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Evolveum Docs xref page path copier",
+  "version": "1.0",
+  "description": "Copies the Evolveum Docs URL without the base domain and the branch segment.",
+  "permissions": [
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "icons": {
+      "32": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "copy-url": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U"
+      },
+      "description": "Copy the URL"
+    }
+  }
+}
